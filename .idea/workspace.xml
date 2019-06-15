@@ -3,9 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="08050b8c-cbae-4fe3-a273-7fb602a26ebd" name="Default Changelist" comment="">
       <change afterPath="$PROJECT_DIR$/../MyWorkoutRoutines/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/findDuplicateFiles.py" beforeDir="false" afterPath="$PROJECT_DIR$/findDuplicateFiles.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../MyWorkoutRoutines/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../MyWorkoutRoutines/.idea/dbnavigator.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../MyWorkoutRoutines/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../MyWorkoutRoutines/.idea/workspace.xml" afterDir="false" />
     </list>
@@ -20,7 +18,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/findDuplicateFiles.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="573">
+            <state relative-caret-position="896">
               <caret line="82" column="26" lean-forward="true" selection-start-line="82" selection-start-column="26" selection-end-line="82" selection-end-column="26" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
@@ -155,7 +153,7 @@
       <window_info id="DB Browser" order="3" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.35887095" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.35887095" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3998656" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -203,7 +201,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/findDuplicateFiles.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="573">
+        <state relative-caret-position="896">
           <caret line="82" column="26" lean-forward="true" selection-start-line="82" selection-start-column="26" selection-end-line="82" selection-end-column="26" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
