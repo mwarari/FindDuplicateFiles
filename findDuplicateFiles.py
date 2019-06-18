@@ -4,12 +4,12 @@
     The value is the file with full path.
 
     Usage:
-        python findDuuplicateFiles.py paths=Paths exlude_paths=ExcludePaths [output_file=OutputFile]
+        python findDuuplicateFiles.py paths=Paths [exlude_paths=ExcludePaths] [output_file=OutputFile]
 
         Arguments:
-            paths: Paths to scan
+            paths:                   Paths to scan
             exclude_paths(optional): Paths to exclude from scan
-            output_file(Optional): The file to send the results to.
+            output_file(Optional):   The file to send the results to.
 
         Example:
              python findDuuplicateFiles.py paths=C:\,D:\ exlude_path=C:$Recycle.bin,c:\pin [output_file=c:\temp\duplicate_files.txt]
@@ -76,9 +76,26 @@ def get_command_line_argument(arg_name):
     return None
 
 
+def show_usage():
+    this_file = os.path.basename(__file__)
+    print('''
+    Usage:
+        python {} paths=Paths [exlude_paths=ExcludePaths] [output_file=OutputFile]
+
+        Arguments:
+            paths:                    Paths to scan
+            exclude_paths (optional): Paths to exclude from scan
+            output_file (Optional):   The file to send the results to.
+
+        Example:
+             python {} paths=C:\\,D:\\ exlude_path=C:$Recycle.bin,c:\\pin [output_file=c:\\temp\\duplicate_files.txt]
+    '''.format(this_file, this_file))
+
+
 tmp = get_command_line_argument('paths')
 if tmp is None:
-    print("paths argument is empty.")
+    show_usage()
+    exit(1)
 else:
     paths = tmp.split(',')
 
@@ -92,9 +109,9 @@ tmp = get_command_line_argument('output_file')
 if tmp is None:
     output_file = ''
 else:
-    output_file = get_command_line_argument('output_file')
+    output_file = tmp
 
-output_file = get_command_line_argument('output_file')
+# output_file = get_command_line_argument('output_file')
 duplicates = collections.defaultdict(list)
 traverse_paths(paths, duplicates)
 
