@@ -118,8 +118,10 @@ traverse_paths(paths, duplicates)
 if output_file != '':
     with open(output_file, 'w', encoding="utf-8") as log:
         for key, value in duplicates.items():
-            log.write('%s: %s :%d\n' % (key, value, len(value)))
-            log.flush()
+            if len(value) > 1:
+                log.write('%s: %s :%d\n' % (key, value, len(value)))
+                log.flush()
 else:
     for key, value in duplicates.items():
-        print('%s: %s :%d\n' % (key, value, len(value)))
+        if len(value) > 1:
+            print('%s: %s :%d\n' % (key, value, len(value)))
