@@ -119,9 +119,15 @@ if output_file != '':
     with open(output_file, 'w', encoding="utf-8") as log:
         for key, value in duplicates.items():
             if len(value) > 1:
-                log.write('%s: %s :%d\n' % (key, value, len(value)))
-                log.flush()
+                log.write('%s\n' % key)  # Print the hash
+                for f in value:          # Print the files
+                    log.write('%s\n' % f)
+                    log.flush()
+                log.write('\n\n')
 else:
     for key, value in duplicates.items():
         if len(value) > 1:
-            print('%s: %s :%d\n' % (key, value, len(value)))
+            print('{}'.format(key))
+            for f in value:
+                print('{}'.format(value))
+            print('\n\n')
